@@ -199,14 +199,4 @@ router.delete('/education/:edu_id',passport.authenticate('jwt',{ session: false 
   .catch(err=>res.json(err));
 });
 
-router.delete('/',passport.authenticate('jwt',{ session: false }), (req,res) => {
-  Profile.findOneAndRemove({ user: req.user.id })
-  .then(() => {
-    User.findOneAndRemove({_id: req.user.id }).then(()=>
-     res.json({success:true})
-   );
- });
-});
-
-
 module.exports = router;
