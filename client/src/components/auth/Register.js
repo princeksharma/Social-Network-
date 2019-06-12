@@ -65,7 +65,7 @@ class Register extends Component {
               Sign Up
               </h1>
               <p className="lead text-center">
-                Create your AIACTR account
+                Create your account
               </p>
               <form noValidate onSubmit={this.onSubmit}>
               <TextFieldGroup

@@ -60,7 +60,7 @@ class Login extends Component {
                 Log In
                </h1>
                <p className="lead text-center">
-                Sign in to your AIACTR account
+                Sign in to your account
                </p>
                <form onSubmit={this.onSubmit}>
 
